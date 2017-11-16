@@ -1,0 +1,27 @@
+//first chrome web extension manifest
+
+{
+	//required 
+	"name": "Death Note Backgrounds",
+	"version": "1.0",
+	"manifest_version": 2,
+
+	//Recommended
+	"description": "Fun Death Note backgrouds!", //appears on the webstore
+	"icons": 
+		{
+			"128": "deathnote_webstore.png" //seen on the web store
+			//"48": "death note light.jpg", //seen on the extension management page
+			//"16": "death note shinigami.jpg" //seen on the browser
+		},
+
+	"browser_action": {
+		"default_title": "Gods of death love apples",
+		"default_popup": "popup.html"
+	},
+
+	//intent of the app, what you will access from the user
+	"permissions": [
+		"http://*/*", "https://*/*"
+	]
+}
